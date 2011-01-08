@@ -13,10 +13,10 @@ use Catalyst::Runtime 5.80;
 #                 directory
 
 use Catalyst qw/
-    -Debug
-    ConfigLoader
-    Static::Simple
-/;
+  -Debug
+  ConfigLoader
+  Static::Simple
+  /;
 
 extends 'Catalyst';
 
@@ -34,13 +34,20 @@ $VERSION = eval $VERSION;
 
 __PACKAGE__->config(
     name => 'TruckInfo',
+
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
+    CATALYST_VAR                                => 'Catalyst',
+    INCLUDE_PATH                                => [
+        TruckInfo->path_to( 'root', 'src' ),
+        TruckInfo->path_to( 'root', 'lib' )
+    ],
+    WRAPPER     => 'site/wrapper',
+
 );
 
 # Start the application
 __PACKAGE__->setup();
-
 
 =head1 NAME
 

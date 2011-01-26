@@ -1,0 +1,128 @@
+<div align="left" id="carreta_grade_baixa">
+	<h2>Dados do Veículo</h1>
+	<form method="post" action="[% c.uri_for(c.controller('TruckRegister').action_for('render'),cpf) %]">
+		<table>
+			<td><b>Proprie&aacute;rio do Veiculo</b></td>
+			<tr>
+				<td>Nome</td>
+				<td><input type="text" name="cgb_nome" size="15"></td>
+				<td>CPF/CNPJ</td>
+				<td><input type="text" name="cgb_cpf_cnpj" size="15"></td>
+			</tr>
+			<tr>
+				<td>PIS</td>
+				<td><input type="text" name="cgb_pis" size="15"></td>
+				<td>RG</td>
+				<td><input type="text" name="cgb_rg" size="15"></td>
+			</tr>
+			<tr>
+				<td>Endere&ccedil;o</td>
+				<td><input type="text" name="cgb_endereco"></td>
+			</tr>
+			<tr>
+				<td>Cidade</td>
+				<td><input type="text" name="cgb_cidade" size="10"></td>
+				<td>Estado</td>
+				<td><input type="text" name="cgb_estado" size="2"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="cgp_telefone" size="12"></td>
+				<td>Contato</td>
+				<td><input type="text" name="cgp_contato"></td>
+			</tr>
+				<tr><td><b>Dados Do Veiculo</b></td></tr>
+			<tr>
+				<td>Placa Cavalo</td>
+				<td><input type="text" name="ddv_placa_cavalo" size="10"></td>
+				<td>Ano</td>
+				<td><input type="text" name="ddv_ano" size="4"></td>
+			</tr>
+			<tr>
+				<td>Cidade</td>
+				<td><input type="text" name="ddv_cidade"></td>
+				<td>Cor</td>
+				<td><input type="text" name="ddv_cor"></td>
+			</tr>
+			<tr>
+				<td>Modelo</td>
+				<td><input type="text" name="ddv_modelo"></td>
+				<td>Marca</td>
+				<td><input type="text" name="ddv_marca"></td>
+			</tr>
+			<tr>
+				<td>Chassi</td>
+				<td><input type="text" name="ddv_chasse"></td>
+				<td>Renavam</td>
+				<td><input type="text" name="renavam"></td>
+			</tr>
+			<tr>
+				<td>Certificado</td>
+				<td><input type="text" name="ddv_certificado"></td>
+				<td>Data Licenciamento</td>
+				<td><input type="text" name="ddv_data_licenciamento"></td>
+			</tr>
+			<tr><td><b>Propriet&aacute;rio da Carreta</b></td></tr>
+			<tr>
+				<td>Nome</td>
+				<td><input type="text" name="pdc_nome"></td>
+				<td>CPF/CNPJ</td>
+				<td><input type="text" name="pdc_cpf"></td>
+			</tr>
+			<tr>
+				<td>Endere&ccedil;o</td>
+				<td><input type="text" name="pdc_endereco"></td>
+			</tr>
+			<tr>
+				<td>Cidade</td>
+				<td><input type="text" name="pdc_cidade"></td>
+				<td>Estado</td>
+				<td><input type="text" name="pdc_estado" size="2"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="pdc_telefone0"></td>
+				<td>Contato</td>
+				<td><input type="text" name="pdc_contato0"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="pdc_telefone1"></td>
+				<td>Contato</td>
+				<td><input type="text" name="pdc_contato1"></td>
+			</tr>
+			<tr><td><b>Dados da Carreta</b></td></tr>
+			<tr>
+				<td>Placa</td>
+				<td><input type="text" name="ddc_placa"></td>
+				<td>Ano</td>
+				<td><input type="text" name="ddc_ano" size="4"></td>
+			</tr>
+			<tr>
+				<td>Cidade</td>
+				<td><input type="text" name="ddc_cidade"></td>
+				<td>Cor</td>
+				<td><input type="text" name="ddc_cor"></td>
+			</tr>
+			<tr>
+				<td>Marca</td>
+				<td><input type="text" name="ddc_marca"></td>
+				<td>Chassi</td>
+				<td><input type="text" name="ddc_chasse"></td>
+			</tr>
+			<tr>
+				<td>Renavam</td>
+				<td><input type="text" name="ddc_renavam"></td>
+				<td>Certificado</td>
+				<td><input type="text" name="ddc_certificado"></td>
+			</tr>
+			<tr>
+				<td>Data Licenciamento</td>
+				<td><input type="text" name="ddc_licenciamento"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Dados do Veiculo" /></td>
+			</tr>
+		</table>
+	</form>
+</div>

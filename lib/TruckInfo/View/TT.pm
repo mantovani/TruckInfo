@@ -7,7 +7,13 @@ use base 'Catalyst::View::TT';
 
 __PACKAGE__->config(
     TEMPLATE_EXTENSION => '.tt',
-    render_die => 1,
+    render_die         => 1,
+    INCLUDE_PATH       => [
+        TruckInfo->path_to( 'root', 'templates', 'src' ),
+        TruckInfo->path_to( 'root', 'templates', 'lib' )
+    ],
+    WRAPPER => 'site/wrapper',
+
 );
 
 =head1 NAME

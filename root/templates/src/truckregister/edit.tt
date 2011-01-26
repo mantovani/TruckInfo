@@ -1,0 +1,504 @@
+<div align="left">
+
+	<h2>Motorista</h2>
+
+	<form name="edit" method="post" action="[% c.uri_for(c.controller("TruckRegister").action_for("edit"),clean_cpf(cpf)) %]"> 
+
+		<table>
+
+			<tr>
+
+				<td>Nome</td>
+
+				<td><input type="text" name="name2" value="[% name2 %]">
+
+			</tr>
+
+		</table>
+
+[% IF error_msg %]
+
+	<p>[% error_msg %]</p>
+
+[% END %]
+
+</div>
+
+<div align="left" id="motorista">
+
+	<h2>Dados do Motorista</h2>
+
+		<table>
+
+			<tr>
+
+				<td>Apelido</td>
+
+				<td><input type="text" name="motorista_apelido" value="[% motorista_apelido %]"></td>
+
+				<td>Endere&ccedil;o</td>
+
+				<td><input type="text" size="25" name="motorista_endereco" value="[% motorista_endereco %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Bairro</td>
+
+				<td><input type="text" name="motorista_bairro" value="[% motorista_bairro %]"></td> 
+
+			</tr>
+
+			<tr>
+
+				<td>Cidade</td>
+
+				<td><input type="text" name="motorista_cidade" value="[% motorista_cidade %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Cep</td>
+
+				<td><input type="text" name="motorista_cep" value="[% motorista_cep %]"></td>
+
+				<td>Estado</td>
+
+				<td><input type="text" name="motorista_estado" value="[% motorista_estado %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>R.G</td>
+
+				<td><input type="text" name="motorista_rg" value="[% motorista_rg %]">
+
+				<td>Local</td>
+
+				<td><input type="text" name="motorista_local" value="[% motorista_local %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Prontu&aacute;rio</td>
+
+				<td><input type="text" name="motorista_prontuario" value="[% motorista_prontuario %]">
+
+				<td>Data de Expedi&ccedil;&atilde;o</td>
+
+				<td><input type="text" name="motorista_data_de_expedicao" value="[% motorista_data_de_expedicao %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Habilita&ccedil;&atilde;o</td>
+
+				<td><input type="text" name="motorista_habilitacao" value="[% motorista_habilitacao %]"></td>
+
+				<td>Tipo <input type="text" name="motorista_tipo" value="[% motorista_tipo %]"></td>
+
+				<td>Data de Vencimento</td>
+
+				<td><input type="text" name="motorista_data_de_vencimento" value="[% motorista_data_de_vencimento %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>PIS</td>
+
+				<td><input type="text" name="motorista_pis" value="[% motorista_pis %]">
+
+				<td>ANTT</td>
+
+				<td><input type="text" name="motorista_antt" value="[% motorista_antt %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td><b>Filia&ccedil;&atilde;o</b></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Pai</td>
+
+				<td><input type="text" name="motorista_pai" value="[% motorista_pai %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>M&acirc;e</td>
+
+				<td><input type="text" name="motorista_mae" value="[% motorista_mae %]">
+
+			</tr>
+
+			<tr>
+
+				<td><b>Refer&ecirc;ncias</b></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone0" value="[% motorista_telefone0 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato0" value="[% motorista_contato0 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone1" value="[% motorista_telefone1 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato1" value="[% motorista_contato1 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone2" value="[% motorista_telefone2 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato2" value="[% motorista_contato2 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone3" value="[% motorista_telefone3 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato3" value="[% motorista_contato3 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone4" value="[% motorista_telefone4 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato4" value="[% motorista_contato4 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="motorista_telefone5" value="[% motorista_telefone5 %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="motorista_contato5" value="[% motorista_contato5 %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Celular</td>
+
+				<td><input type="text" name="motorista_celular" value="[% motorista_celular %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Curso de Cargas Perigosas</td>
+
+				<td><input type="text" name="motorista_curso_de_carga_perigosas" value="[% motorista_curso_de_carga_perigosas %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Refer&ecirc;ncia Banc&aacute;ria</td>
+
+				<td><input type="text" name="referencia_bancaria" value="[% referencia_bancaria %]">
+
+			</tr>
+
+		</table>
+
+</div>
+
+<div align="left" id="carreta_grade_baixa">
+
+	<h2>Dados do Veículo</h2>
+
+		<table>
+
+			<td><b>Proprie&aacute;rio do Veiculo</b></td>
+
+			<tr>
+
+				<td>Nome</td>
+
+				<td><input type="text" name="cgb_nome" value="[% cgb_nome %]"></td>
+
+				<td>CPF/CNPJ</td>
+
+				<td><input type="text" name="cgb_cpf_cnpj" value="[% cgb_cpf_cnpj %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>PIS</td>
+
+				<td><input type="text" name="cgb_pis" value="[% cgb_pis %]"></td>
+
+				<td>RG</td>
+
+				<td><input type="text" name="cgb_rg" value="[% cgb_rg %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Endere&ccedil;o</td>
+
+				<td><input type="text" name="cgb_endereco" value="[% cgb_endereco %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Cidade</td>
+
+				<td><input type="text" name="cgb_cidade" value="[% cgb_cidade %]"></td>
+
+				<td>Estado</td>
+
+				<td><input type="text" name="cgb_estado" value="[% cgb_estado %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="cgp_telefone" value="[% cgp_telefone %]"></td>
+
+				<td>Contato</td>
+
+				<td><input type="text" name="cgp_contato" value="[% cgp_contato %]">
+
+			</tr>
+
+				<tr><td><b>Dados Do Veiculo</b></td></tr>
+
+			<tr>
+
+				<td>Placa Cavalo</td>
+
+				<td><input type="text" name="ddv_placa_cavalo" value="[% ddv_placa_cavalo %]"></td>
+
+				<td>Ano</td>
+
+				<td><input type="text" name="ddv_ano" value="[% ddv_ano %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Cidade</td>
+
+				<td><input type="text" name="ddv_cidade" value="[% ddv_cidade %]">
+
+				<td>Cor</td>
+
+				<td><input type="text" name="ddv_cor" value="[% ddv_cor %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Modelo</td>
+
+				<td><input type="text" name="ddv_modelo" value="[% ddv_modelo %]">
+
+				<td>Marca</td>
+
+				<td><input type="text" name="ddv_marca" value="[% ddv_marca %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Chassi</td>
+
+				<td><input type="text" name="ddv_chasse" value="[% ddv_chasse %]">
+
+				<td>Renavam</td>
+
+				<td><input type="text" name="renavam" value="[% renavam %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Certificado</td>
+
+				<td><input type="text" name="ddv_certificado" value="[% ddv_certificado %]">
+
+				<td>Data Licenciamento</td>
+
+				<td><input type="text" name="ddv_data_licenciamento" value="[% ddv_data_licenciamento %]">
+
+			</tr>
+
+			<tr><td><b>Propriet&aacute;rio da Carreta</b></td></tr>
+
+			<tr>
+
+				<td>Nome</td>
+
+				<td><input type="text" name="pdc_nome" value="[% pdc_nome %]">
+
+				<td>CPF/CNPJ</td>
+
+				<td><input type="text" name="pdc_cpf" value="[% pdc_cpf %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Endere&ccedil;o</td>
+
+				<td><input type="text" name="pdc_endereco" value="[% pdc_endereco %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Cidade</td>
+
+				<td><input type="text" name="pdc_cidade" value="[% pdc_cidade %]">
+
+				<td>Estado</td>
+
+				<td><input type="text" name="pdc_estado" value="[% pdc_estado %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="pdc_telefone0" value="[% pdc_telefone0 %]">
+
+				<td>Contato</td>
+
+				<td><input type="text" name="pdc_contato0" value="[% pdc_contato0 %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Telefone</td>
+
+				<td><input type="text" name="pdc_telefone1" value="[% pdc_telefone1 %]">
+
+				<td>Contato</td>
+
+				<td><input type="text" name="pdc_contato1" value="[% pdc_contato1 %]">
+
+			</tr>
+
+			<tr><td><b>Dados da Carreta</b></td></tr>
+
+			<tr>
+
+				<td>Placa</td>
+
+				<td><input type="text" name="ddc_placa" value="[% ddc_placa %]">
+
+				<td>Ano</td>
+
+				<td><input type="text" name="ddc_ano" value="[% ddc_ano %]"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Cidade</td>
+
+				<td><input type="text" name="ddc_cidade" value="[% ddc_cidade %]">
+
+				<td>Cor</td>
+
+				<td><input type="text" name="ddc_cor" value="[% ddc_cor %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Marca</td>
+
+				<td><input type="text" name="ddc_marca" value="[% ddc_marca %]">
+
+				<td>Chassi</td>
+
+				<td><input type="text" name="ddc_chasse" value="[% ddc_chasse %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Renavam</td>
+
+				<td><input type="text" name="ddc_renavam" value="[% ddc_renavam %]">
+
+				<td>Certificado</td>
+
+				<td><input type="text" name="ddc_certificado" value="[% ddc_certificado %]">
+
+			</tr>
+
+			<tr>
+
+				<td>Data Licenciamento</td>
+
+				<td><input type="text" name="ddc_licenciamento" value="[% ddc_licenciamento %]">
+
+			</tr>
+
+			<tr>
+
+				<td><input type="submit" value="Salvar" /></td>
+
+			</tr>
+
+		</table>
+
+	</form>
+
+</div>
+

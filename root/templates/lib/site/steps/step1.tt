@@ -1,0 +1,21 @@
+<div align="center">
+	<h2>Novo Motorista</h2>
+	<form name="step1" method="post" action="[% c.uri_for(c.controller("TruckRegister").action_for("step2")) %]" >
+		<table>
+			<tr>
+				<td>CPF:</td>
+				<td><input type="text" name="cpf"></td>
+			</tr>
+			<tr>
+				<td>Nome</td>
+				<td><input type="text" name="name2"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="proximo"></td>
+			</tr>
+		</table>
+	</form>
+[% IF error_msg %]
+	<p>[% error_msg %]</p>
+[% END %]
+</div>

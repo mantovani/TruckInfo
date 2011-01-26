@@ -1,0 +1,19 @@
+<h1>Resultado</h1>
+[% SET my_driver = find_cpf(search_cpf) %]
+
+<table>
+    <tr>
+        <td><b>Nome</b></td>
+        <td><b>CPF</b></td>
+    </tr>
+[% IF find_cpf(search_cpf) %]
+	<tr>
+		<td><a href="[% c.uri_for(c.controller('truckregister').action_for('render'),my_driver.cpf) %]">[% my_driver.name2 %]</a></td>
+		<td>[% format_cpf(my_driver.cpf) %]</td>
+		<td><a href="[% c.uri_for(c.controller('truckregister').action_for('edit'),my_driver.cpf) %]">Editar</a></td>
+	</tr>
+[% ELSE %]
+
+<p>Não foi encontrado resultado</p>
+
+[% END %]

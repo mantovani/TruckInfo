@@ -1,0 +1,10 @@
+<h1>Procurar</h1>
+<form method="post" action="[% c.uri_for(c.controller('truckregister').action_for('search'))%]">
+	<table>
+		<tr>
+			<td><select name="tipo"><option name="name2" value="name2">Nome</option><option name="cpf" value="cpf">CPF</option></td>
+			<td><input type="text" name="search"></td>
+		</tr>
+		<tr><td><input type="submit" value="Procurar"></td></tr>
+	</table>
+</form>

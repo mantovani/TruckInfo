@@ -1,0 +1,115 @@
+<div align="left" id="motorista">
+	<h1>Dados do Motorista</h1>
+	<form method="post" action="[% c.uri_for(c.controller('TruckRegister').action_for('step3')) %]">
+		<table>
+			<tr>
+				<td>Apelido</td>
+				<td><input type="text" name="motorista_apelido" size="10"></td>
+				<td>Endere&ccedil;o</td>
+				<td><input type="text" size="25" name="motorista_endereco"></td>
+			</tr>
+			<tr>
+				<td>Bairro</td>
+				<td><input type="text" name="motorista_bairro" size="10"></td> 
+			</tr>
+			<tr>
+				<td>Cidade</td>
+				<td><input type="text" name="motorista_cidade" size="10"></td>
+			</tr>
+			<tr>
+				<td>Cep</td>
+				<td><input type="text" name="motorista_cep" size="8"></td>
+				<td>Estado</td>
+				<td><input type="text" name="motorista_estado" size="2"></td>
+			</tr>
+			<tr>
+				<td>R.G</td>
+				<td><input type="text" name="motorista_rg"></td>
+				<td>Local</td>
+				<td><input type="text" name="motorista_local" size="15"></td>
+			</tr>
+			<tr>
+				<td>Prontu&aacute;rio</td>
+				<td><input type="text" name="motorista_prontuario"></td>
+				<td>Data de Expedi&ccedil;&atilde;o</td>
+				<td><input type="text" name="motorista_data_de_expedicao" size="12"></td>
+			</tr>
+			<tr>
+				<td>Habilita&ccedil;&atilde;o</td>
+				<td><input type="text" name="motorista_habilitacao" size="15"></td>
+				<td>Tipo <input type="text" name="motorista_tipo" size="1"></td>
+				<td>Data de Vencimento</td>
+				<td><input type="text" name="motorista_data_de_vencimento" size="12"></td>
+			</tr>
+			<tr>
+				<td>PIS</td>
+				<td><input type="text" name="motorista_pis"></td>
+				<td>ANTT</td>
+				<td><input type="text" name="motorista_antt" size="15"></td>
+			</tr>
+			<tr>
+				<td><b>Filia&ccedil;&atilde;o</b></td>
+			</tr>
+			<tr>
+				<td>Pai</td>
+				<td><input type="text" name="motorista_pai" ></td>
+			</tr>
+			<tr>
+				<td>M&acirc;e</td>
+				<td><input type="text" name="motorista_mae"></td>
+			</tr>
+			<tr>
+				<td><b>Refer&ecirc;ncias</b></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone0" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato0" size="15"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone1" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato1" size="15"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone2" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato2" size="15"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone3" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato3" size="15"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone4" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato4" size="15"></td>
+			</tr>
+			<tr>
+				<td>Telefone</td>
+				<td><input type="text" name="motorista_telefone5" size="15"></td>
+				<td>Contato</td>
+				<td><input type="text" name="motorista_contato5" size="15"></td>
+			</tr>
+			<tr>
+				<td>Celular</td>
+				<td><input type="text" name="motorista_celular" size="15"></td>
+			</tr>
+			<tr>
+				<td>Curso de Cargas Perigosas</td>
+				<td><input type="text" name="motorista_curso_de_carga_perigosas" size="10"></td>
+			</tr>
+			<tr>
+				<td>Refer&ecirc;ncia Banc&aacute;ria</td>
+				<td><input type="text" name="referencia_bancaria"></td>
+			</tr>
+			<td><input type="submit" value="Carreta Grade Baixa" /></td>
+		</table>
+	</form>
+</div>

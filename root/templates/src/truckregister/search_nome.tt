@@ -1,0 +1,13 @@
+<h1>Todos os motoristas</h1>
+<table>
+    <tr>
+        <td><b>Nome</b></td>
+        <td><b>CPF</b></td>
+    </tr>
+[% FOREACH my_driver IN find_drivers(search_nome) %]
+	<tr>
+		<td><a href="[% c.uri_for(c.controller('truckregister').action_for('render'),my_driver.cpf) %]">[% my_driver.name2 %]</a></td>
+		<td>[% format_cpf(my_driver.cpf) %]</td>
+		<td><a href="[% c.uri_for(c.controller('truckregister').action_for('edit'),my_driver.cpf) %]">Editar</a></td>
+	</tr>
+[% END %]

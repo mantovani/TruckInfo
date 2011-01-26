@@ -16,6 +16,11 @@ use Catalyst qw/
   -Debug
   ConfigLoader
   Static::Simple
+
+  Session
+  Session::Store::FastMmap
+  Session::State::Cookie
+
   /;
 
 extends 'Catalyst';
@@ -37,13 +42,6 @@ __PACKAGE__->config(
 
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
-    CATALYST_VAR                                => 'Catalyst',
-    INCLUDE_PATH                                => [
-        TruckInfo->path_to( 'root', 'src' ),
-        TruckInfo->path_to( 'root', 'lib' )
-    ],
-    WRAPPER     => 'site/wrapper',
-
 );
 
 # Start the application

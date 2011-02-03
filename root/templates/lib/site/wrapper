@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="/static/css.css" type="text/css" media="print"  /> 
     	<title>Agencia fuminante</title> 
 		<style type="text/css">
-			td {font-size:10px;
+			td {font-size:11px;
 				padding:0px;
 				}
 		</style>

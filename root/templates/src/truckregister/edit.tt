@@ -32,9 +32,9 @@
 
 			<tr>
 
-				<td>Apelido</td>
+				<td>Data Nascimento</td>
 
-				<td><input type="text" name="motorista_apelido" value="[% motorista_apelido %]"></td>
+				<td><input type="text" name="data_nascimento" value="[% motorista_apelido %]"></td>
 
 				<td>Endere&ccedil;o</td>
 

@@ -9,6 +9,8 @@
 <font size="4">Dados do Motorista</font><br />
 		<table>
 			<tr>
+				<td>Data Nascimento:</td>
+<td>[% data_nascimento %]</td>
 				<td>CPF:</td>
 <td>[% cpf %]</td>
 			</tr>
@@ -17,10 +19,8 @@
 <td>[% name2 %]</td>
 			</tr>
 			<tr>
-				<td>Apelido</td>
-<td>[% motorista_apelido %]</td>
 				<td>Endere&ccedil;o</td>
-<td>[% motorista_endereco %]</td>
+				<td>[% motorista_endereco %]</td>
 			</tr>
 			<tr>
 				<td>Bairro</td>
@@ -98,28 +98,8 @@
 <td>[% motorista_contato3 %]</td>
 			</tr>
 			<tr>
-				<td>Telefone</td>
-<td>[% motorista_telefone4 %]</td>
-				<td>Contato</td>
-<td>[% motorista_contato4 %]</td>
-			</tr>
-			<tr>
-				<td>Telefone</td>
-<td>[% motorista_telefone5 %]</td>
-				<td>Contato</td>
-<td>[% motorista_contato5 %]</td>
-			</tr>
-			<tr>
 				<td>Celular</td>
 <td>[% motorista_celular %]</td>
-			</tr>
-			<tr>
-				<td>Curso de Cargas Perigosas</td>
-<td>[% motorista_curso_de_carga_perigosas %]</td>
-			</tr>
-			<tr>
-				<td>Refer&ecirc;ncia Banc&aacute;ria</td>
-<td>[% referencia_bancaria %]</td>
 			</tr>
 		</table>
 </div>
@@ -134,8 +114,6 @@
 <td>[% cgb_cpf_cnpj %]</td>
 			</tr>
 			<tr>
-				<td>PIS</td>
-<td>[% cgb_pis %]</td>
 				<td>RG</td>
 <td>[% cgb_rg %]</td>
 			</tr>

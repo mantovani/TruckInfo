@@ -2,6 +2,8 @@ package TruckInfo::Controller::Root;
 use Moose;
 use namespace::autoclean;
 
+use Encode;
+
 BEGIN { extends 'Catalyst::Controller' }
 
 #
@@ -36,6 +38,38 @@ sub index : Path : Args(0) {
 
 sub base : Chained('/') : PathPart('') : CaptureArgs(0) {
     my ( $self, $c ) = @_;
+}
+
+sub login : Chained('base') : PathPart('login') : Args(0) {
+    my ( $self, $c ) = @_;
+    if ( %{ $c->req->body_params } ) {
+        my $params = $c->req->body_params;
+
+        if ( !$params->{user} || !$params->{password} ) {
+            $c->stash->{msg_error} = 'Usuário e Senha são obrigatórios';
+            return;
+        }
+
+        my $result = $c->model('Schema')->c('login')->find_one(
+            {
+                name     => $params->{user},
+                password => $params->{password}
+            }
+        );
+
+        if ($result) {
+            $c->session->{user} = $params->{user};
+            $c->res->redirect(
+                $c->uri_for(
+                    $c->controller('truckregister')->action_for('main')
+                )
+            );
+        }
+        else {
+            $c->stash->{msg_error} = 'Usuário ou senha inválidos';
+            return;
+        }
+    }
 }
 
 =head2 default

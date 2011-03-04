@@ -2,6 +2,7 @@ package TruckInfo::Controller::TruckRegister;
 use Moose;
 use namespace::autoclean;
 use Business::BR::CPF;
+use Encode;
 BEGIN { extends 'Catalyst::Controller'; }
 
 =head1 NAME
@@ -28,6 +29,12 @@ sub index : Path : Args(0) {
 
 sub base : Chained('/base') : PathPart('truckregister') : CaptureArgs(0) {
     my ( $self, $c ) = @_;
+
+    if ( !$c->session->{user} ) {
+        $c->res->redirect(
+            $c->uri_for( $c->controller('root')->action_for('login') ) );
+    }
+
     $c->stash(
         all_drivers => sub {
             return [ $c->model('Schema')->c->find->all ];
@@ -45,7 +52,7 @@ sub base : Chained('/base') : PathPart('truckregister') : CaptureArgs(0) {
             my $infs = shift;
             my %hash;
             foreach my $key ( keys %{$infs} ) {
-                $hash{$key} = uc( $infs->{$key} );
+                $hash{$key} = encode( 'utf8', uc( $infs->{$key} ) );
             }
             return %hash;
         },

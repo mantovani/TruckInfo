@@ -1,4 +1,4 @@
-<h1>Cargas Fuminante</h1>
+<h1>Cargas Fulminante</h1>
 <p><a href="[% c.uri_for(c.controller('truckregister').action_for('list')) %]">Listar</a></p>
 <p><a href="[% c.uri_for(c.controller('truckregister').action_for('step1')) %]">Cadastrar</a></p>
 <p><a href="[% c.uri_for(c.controller('truckregister').action_for('search')) %]">Procurar</a></p>
